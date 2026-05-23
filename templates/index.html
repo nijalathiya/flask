@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/addData">
+        name: <input type="text" name="name" id="">
+        <br><br>
+        age : <input type="text" name="age" id="">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    
+</head>
+<body>
+
+<br><br>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+
+        {% for i in setData %}
+        <tr>
+            <td>{{ i.name }}</td>
+            <td>{{ i.age }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+
+</html>
