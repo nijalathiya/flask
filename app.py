@@ -23,7 +23,6 @@ def addData():
 def deleteFun():
 
     deleteId = request.args.get('delete')
-
     setData.pop(int(deleteId))
 
     return redirect('/')
