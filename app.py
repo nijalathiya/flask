@@ -14,7 +14,6 @@ def addData():
     
 
     dict = {"name": name,"age":age}
-    # print(dict)
     setData.append(dict)
     print(setData)
 
